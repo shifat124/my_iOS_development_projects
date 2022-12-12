@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomFooterView" customModule="table_view" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="181"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aq-1g-8hy">
+                    <rect key="frame" x="0.0" y="0.0" width="513" height="181"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdU-Ie-RBU">
+                            <rect key="frame" x="228" y="76" width="57" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.39832595637305079" blue="0.33326351856920311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="SdU-Ie-RBU" firstAttribute="centerY" secondItem="0aq-1g-8hy" secondAttribute="centerY" id="2uI-qk-uMd"/>
+                        <constraint firstItem="SdU-Ie-RBU" firstAttribute="centerX" secondItem="0aq-1g-8hy" secondAttribute="centerX" id="wXx-YT-p8y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0aq-1g-8hy" secondAttribute="bottom" id="BPS-nb-Lq2"/>
+                <constraint firstItem="0aq-1g-8hy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Xeq-Jb-snK"/>
+                <constraint firstItem="0aq-1g-8hy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e6w-h0-UP5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0aq-1g-8hy" secondAttribute="trailing" id="mQM-bb-g79"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="footTxtLabel" destination="SdU-Ie-RBU" id="Gbb-Bh-fkf"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="-95.424107142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
