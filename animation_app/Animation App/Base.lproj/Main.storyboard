@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PjF-el-93D">
+                                <rect key="frame" x="20" y="449" width="390" height="34"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb2" translatesAutoresizingMaskIntoConstraints="NO" id="xaa-Mr-hAV">
+                                <rect key="frame" x="148.66666666666669" y="318.33333333333331" width="132.66666666666669" height="110.66666666666669"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PjF-el-93D" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.906542" id="Kqx-ey-Kcv"/>
+                            <constraint firstItem="PjF-el-93D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0367171" id="Pzo-yo-l0h"/>
+                            <constraint firstItem="xaa-Mr-hAV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byP-4I-xkL"/>
+                            <constraint firstItem="xaa-Mr-hAV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.11879" id="fTA-Vd-gzK"/>
+                            <constraint firstItem="PjF-el-93D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ibb-eH-BZw"/>
+                            <constraint firstItem="xaa-Mr-hAV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.308411" id="odi-OY-UOn"/>
+                            <constraint firstItem="PjF-el-93D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tWr-Lv-AvO"/>
+                            <constraint firstItem="PjF-el-93D" firstAttribute="top" secondItem="xaa-Mr-hAV" secondAttribute="bottom" constant="20" id="vzc-Ee-a4d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstarint" destination="vzc-Ee-a4d" id="369-HX-awZ"/>
+                        <outlet property="footballImageView" destination="xaa-Mr-hAV" id="Rnl-0a-7lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="-288"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fb2" width="513" height="487"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
